@@ -1,0 +1,26 @@
+.active{
+    color:black!important;
+}
+
+#header{
+    background:url("../bahanikopin/image1.png");
+    background-position: center;
+    background-repeat: none;
+    background-position-x: right;
+    background-size: cover;
+}
+
+a.btn.mt-3.text-uppercase {
+    background-color: white;
+    color: black;
+}
+
+.container2{
+    padding-bottom:100px;
+}
+
+@media screen and (max-width:800){
+    .container2{
+        padding-bottom:0px
+    }
+}
