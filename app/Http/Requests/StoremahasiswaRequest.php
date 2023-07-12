@@ -35,7 +35,7 @@ class StoremahasiswaRequest extends FormRequest
     {
             return [
                 'txtNIM.required' => ':attribute Tidak boleh kosong',
-                'txtNIM.unique' => ':attribut ini sudah terdaftar',
+                'txtNIM.unique' => ':attribute ini sudah terdaftar',
                 'txtFullname.required' => ':attribute Tidak boleh Kosong',
                 'txtemail.unique' => ':attribute ini sudah terdaftar',
             ];

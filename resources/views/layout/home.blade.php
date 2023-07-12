@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('content')
+@section('content2')
         <div class="card">
             <div class="card-header">
          Halo, Welcome.
@@ -16,19 +16,19 @@
         <header id="header" class="w-auto carousel-slide" data-bs-ride="carousel" data-bs-interval="3000" style="padding-top: 104px;">
             <div class="container2  carousel-inner">
                 <div class="text-center carousel-item active">
-                    <h3 class="text-capitalize text-white"> IKOPIN ACTIVITY </h3>
-                    <h2 class=" text-uppercase py-2 fw-bold text-white"> Mahasiswa Baru</h2>
-                    <a href="https://www.ikopin.ac.id/pendaftaran-s1" class="btn mt-3 text-uppercase"> Daftar Sekarang!</a>
+                    <h3 class="header-text text-capitalize text-white"> IKOPIN ACTIVITY </h3>
+                    <h2 class="sub-head text-uppercase py-2 fw-bold text-white"> Mahasiswa Baru</h2>
+                    <a href="https://www.ikopin.ac.id/pendaftaran-s1" class="nav-head btn mt-3 text-uppercase"> Daftar Sekarang!</a>
                 </div>
                 <div class="text-center carousel-item">
-                    <h3 class="text-capitalize text-white"> Pilih Jurusan Ikopin </h2>
-                    <h2 class="text-uppercase py-2 fw-bold text-warning"> Cek Ikopin Website </h2>
-                    <a href="https://www.ikopin.ac.id/" class="btn mt-3 text-uppercase"> Disini </a>
+                    <h3 class="header-text text-capitalize text-white"> Pilih Jurusan Ikopin </h2>
+                    <h2 class="sub-head text-uppercase py-2 fw-bold text-warning"> Cek Ikopin Website </h2>
+                    <a href="https://www.ikopin.ac.id/" class="nav-head btn mt-3 text-uppercase"> Disini </a>
                 </div>
             </div>
             <hr>
         </header>
-
+  
         <div class="container mx-auto">
             <div class="row justify-content-center text-center">
                 <div class="col-md-3">

@@ -5,9 +5,11 @@
             <h4> Data Mahasiswa Ikopin </h4>
         <div class="card">
             <div class="card-header">
-            <button type="button" class="btn btn-sm btn-primary" onclick=" window.location='{{ url('mahasiswa/add') }}'">
-                <i class="fas fa-solid fa-plus fa-1x"></i> Add New Data
-            </button>
+                @if (auth()->check() && in_array(auth()->user()->level, ['operator', 'admin']))
+                <button type="button" class="btn btn-sm btn-primary" onclick=" window.location='{{ url('mahasiswa/add') }}'">
+                    <i class="fas fa-solid fa-plus fa-1x"></i> Add New Data
+                </button>
+            @endif
             </div>
             <div class="card-body">
                 @if (session('msg'))
@@ -20,7 +22,7 @@
                 <div class="row mb-3">
                     <label for="searchData" class="col-sm-2 col-form-label">Cari Data Mahasiswa </label>
                     <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm"placeholder="Input Key For Search Data.."  id="searchData" name="searchData"autofocus value="{{ $searchData }}">
+                    <input type="text" class="form-control form-control-sm"placeholder="Input NoPasien For Search Data.."  id="searchData" name="searchData"autofocus value="{{ $searchData }}">
                         
                 </div>
                  </div>
@@ -28,7 +30,7 @@
 
 
 
-            <table class="table table-sm table-striped table-bordered">
+            <table class="table table-sm table-striped table-bordered text-center">
                 <thead>
                     <tr>
                         <th>No</th>

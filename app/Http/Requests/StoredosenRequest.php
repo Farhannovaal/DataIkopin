@@ -35,7 +35,7 @@ class StoredosenRequest extends FormRequest
     {
             return [
                 'noDosen.required' => ':attribute Tidak boleh kosong',
-                'noDosen.unique' => ':attribut ini sudah terdaftar',
+                'noDosen.unique' => ':attribute ini sudah terdaftar',
                 'txtFullname.required' => ':attribute Tidak boleh Kosong',
                 'txtemail.unique' => ':attribute ini sudah terdaftar',
             ];

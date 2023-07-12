@@ -21,6 +21,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'level'
+    ];
+
+
+    protected $attributes = [
+        'level' =>'user',
     ];
 
     /**

@@ -5,9 +5,11 @@
             <h4> Data Dosen Ikopin </h4>
         <div class="card">
             <div class="card-header">
+                @if (auth()->check() && in_array(auth()->user()->level, ['operator', 'admin']))
             <button type="button" class="btn btn-sm btn-primary" onclick=" window.location='{{ url('dosen/add') }}'">
                 <i class="fas fa-solid fa-plus fa-1x"></i> Add New Data
             </button>
+            @endif
             </div>
             <div class="card-body">
                 @if (session('msg'))
@@ -28,7 +30,7 @@
 
 
 
-            <table class="table table-sm table-striped table-bordered">
+            <table class="table table-sm table-striped table-bordered text-center">
                 <thead>
                     <tr>
                         <th>No</th>
@@ -55,7 +57,7 @@
                         <td>{{ $data2->noDosen }}</td>
                         <td>{{ $data2->fullname }}</td>
                         <td>{{ ($data2->genre =='F') ? 'Female' : 'Male' }}</td>
-                        <td>{{ $data2->addres }}</td>
+                        <td>{{ $data2->address }}</td>
                         <td>{{ $data2->emailaddress }}</td>
                         <td>{{ $data2->phone }}</td>
                         <td>

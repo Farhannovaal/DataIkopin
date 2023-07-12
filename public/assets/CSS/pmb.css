@@ -12,10 +12,10 @@
     position: relative;
 }
 
-a.btn.mt-3.text-uppercase {
+/* a.btn.mt-3.text-uppercase {
     background-color: white;
     color: black;
-}
+} */
 
 .container2{width: 100%;overflow: hidden;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .mt-2{
@@ -66,14 +66,20 @@ a.btn.mt-3.text-uppercase {
     animation: slide 15s linear infinite;
     left: 100%;
   }
+  .col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    height: 400px;
+    overflow: scroll;
+}
 
 .navbar-nav {
     width: 450px;
 }
 .navbar-nav {width: 1200px;}
-a.btn.mt-3.text-uppercase:hover {
+/* a.btn.mt-3.text-uppercase:hover {
     background-color: yellow;
-}
+} */
 
 .maba-content{
     height:600px;
@@ -88,14 +94,14 @@ a.btn.mt-3.text-uppercase:hover {
 
 /* .maba-content a {
     font-size: 14px;
-    /*! background-color: #e7e2e2; */
-    /*! padding: 10px 45px; */
-    /*! border-radius: 5px; */
+    background-color: #e7e2e2;
+    padding: 10px 45px;
+    border-radius: 5px;
     text-decoration: none;
     color: black;
-    /*! font-weight: 600; */
-    /*! opacity: 80%; */
-    /*! text-align: center; */
+    font-weight: 600;
+    opacity: 80%;
+    text-align: center;
 } */
 
 /* .maba-content a:hover {
@@ -117,13 +123,36 @@ a.btn.mt-3.text-uppercase:hover {
     align-items: center;
     height:300px;
 }.p-up {
-    /* background-color: #66666630; */
+    background-color: #66666630;
     display: none;
     margin-top: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+.p-up:hover{
+    background-color:yellow;
+    cursor:pointer;
 }
 
-
-
+.link {
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff82;
+    border-radius: 5px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link:hover{
+    background-color:yellow;
+}
+.link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
 #content{
     /* display:none; */
 }
@@ -139,6 +168,7 @@ a.btn.mt-3.text-uppercase:hover {
     /* overflow: hidden; */
     position: relative;
     align-items: center;
+    flex-direction: column;
 }
 .maba-content .content2 {
     width: 300px;
@@ -154,6 +184,87 @@ a.btn.mt-3.text-uppercase:hover {
     width: 300px;
     text-align: center;
     opacity: 85%;
+}
+.maba-content .pop-up-container a {
+    font-size: 10px;
+    background-color: none;
+    padding: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    opacity: 80%;
+    text-align: center;
+}
+
+.content{
+    margin-top:50px;
+}
+.navbar-2-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-2-content ul {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+
+.navbar-2-content ul li {
+    background-color: yellow;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.navbar-2-content ul li:hover {
+    background-color: grey;
+}
+
+.navbar-2-content ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.card li {
+    list-style: lower-alpha;
+}
+
+.card {
+    width: 80%;
+    padding: 20px;
+    display: none;
+}
+
+div#card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /* text-align: center; */
+}
+.content-slide{
+    display:none;
+}
+
+.content-slide.active{
+    display: flex;
+    justify-content: center;
+}
+.content-slide img {
+    width: 600px;
+}
+.slide h2 {
+    background-color: #d9d9d9;
+    padding: 10px 15px;
+    /* Styling tambahan untuk slide */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slide.active {
+    display: block;
 }
 
 
@@ -195,17 +306,17 @@ a.btn.mt-3.text-uppercase:hover {
     /* padding: 0; */
     /* margin: 0; */
 }
-/* .maba-content a {
-    font-size: 12px;
-    background-color: #e7e2e2;
-    padding: 10px 25px;
+.maba-content .pop-up-container a {
+    font-size: 10px;
+    background-color: none;
+    padding: 0;
     border-radius: 5px;
     text-decoration: none;
     color: black;
     font-weight: 600;
     opacity: 80%;
     text-align: center;
-} */
+}
 .pop-up-container {
     /* display:none; */
     padding: 20px;
@@ -220,6 +331,22 @@ a.btn.mt-3.text-uppercase:hover {
     width: 100%;
     align-items: center;
     height:300px;
+}
+.link {
+    width: 120px;
+    height: 30px;
+    background-color: #ffffff82;
+    border-radius: 5px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
 }
     .container2{
         padding-bottom:0px;
@@ -255,17 +382,20 @@ a.btn.mt-3.text-uppercase:hover {
 }
 
 
-/* .maba-content a:hover {
+.maba-content a:hover {
     background-color: yellow;
     color:white;
-} */
+}
 .p-up {
-    /* background-color: #66666630; */
+    background-color: #66666630;
     display: none;
     margin-top: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.container2{width: 100%;overflow: hidden;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.container2{width: 100%;overflow: hidden;position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);}
 
 #content{
     /* display:none; */

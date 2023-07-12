@@ -10,7 +10,7 @@ class dosen extends Model
     use HasFactory;
 
     protected $table = 'dosen';
-    protected $primaryKey = 'noDosen';
+    protected $primaryKey = 'id';
 
     public $incrementing = false;
     public $timestamps = true;
